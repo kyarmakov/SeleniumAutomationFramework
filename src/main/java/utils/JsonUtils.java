@@ -32,8 +32,6 @@ public final class JsonUtils {
                 throw new RuntimeException(e);
             }
 
-        System.out.println("INSIDE JSONUTILS");
-        System.out.println(CONFIGMAP.get(property.name().toLowerCase()).trim());
         return CONFIGMAP.get(property.name().toLowerCase()).trim();
     }
 }

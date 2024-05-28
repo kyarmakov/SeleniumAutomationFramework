@@ -7,7 +7,7 @@ public final class DriverManager {
 
     private DriverManager() {}
 
-    static WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver.get();
     }
 
