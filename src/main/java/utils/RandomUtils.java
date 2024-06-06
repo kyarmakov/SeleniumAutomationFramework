@@ -8,4 +8,8 @@ public final class RandomUtils {
     public static String getRandomEmail() {
         return RandomStringUtils.random(6, true, true) + "@gmail.com";
     }
+
+    public static String getRandomPassword() {
+        return RandomStringUtils.random(6, true, true);
+    }
 }
