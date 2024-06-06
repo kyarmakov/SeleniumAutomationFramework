@@ -27,4 +27,8 @@ public class BasePage {
         Actions actions = new Actions(DriverManager.getDriver());
         actions.moveToElement(find(by)).perform();
     }
+
+    public String getTitle() {
+        return DriverManager.getDriver().getTitle();
+    }
 }
