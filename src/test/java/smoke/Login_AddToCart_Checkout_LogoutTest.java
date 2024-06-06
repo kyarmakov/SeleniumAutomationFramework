@@ -1,11 +1,13 @@
 package smoke;
 
+import constants.FrameworkConstants;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.MyAccountPage;
+import pages.ProductsListPage;
 
 public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
     @Test(priority = 1)
@@ -13,6 +15,16 @@ public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
         MyAccountPage myAccountPage = performLogin(context);
 
         Assert.assertEquals(myAccountPage.getTitle(), "My Account");
+    }
+
+    @Test(priority = 2)
+    void addToCartTest(ITestContext context) {
+        MyAccountPage myAccountPage = performLogin(context);
+
+        ProductsListPage productsListPage = myAccountPage.searchFor(FrameworkConstants.getSmokeSuiteSearchProduct());
+        String productPageTitle = "Search - " + FrameworkConstants.getSmokeSuiteSearchProduct();
+
+        Assert.assertEquals(productsListPage.getTitle(), productPageTitle);
     }
 
     private MyAccountPage performLogin(ITestContext context) {

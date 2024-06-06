@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add RandomUtils">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/smokeSuite/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add Login_AddToCart_Checkout_LogoutTest; add testng.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RandomUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/smokeSuite/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/smokeSuite/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +58,12 @@
       <module name="SeleniumAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="smokeSuite.*" />
+          <option name="PATTERN" value="smoke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="smokeSuite.Login_AddToCart_Checkout_LogoutTest" />
+      <option name="MAIN_CLASS_NAME" value="smoke.Login_AddToCart_Checkout_LogoutTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -78,12 +75,12 @@
       <module name="SeleniumAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="smokeSuite.*" />
+          <option name="PATTERN" value="smoke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="smokeSuite.RegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="smoke.RegisterTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -95,12 +92,12 @@
       <module name="SeleniumAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="smokeSuite.*" />
+          <option name="PATTERN" value="smoke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="smokeSuite.RegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="smoke.RegisterTest" />
       <option name="METHOD_NAME" value="performRegistrationTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -113,12 +110,12 @@
       <module name="SeleniumAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="smokeSuite.*" />
+          <option name="PATTERN" value="smoke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="smokeSuite.RegisterTest" />
+      <option name="MAIN_CLASS_NAME" value="smoke.RegisterTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -146,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716903362158</updated>
       <workItem from="1716903364075" duration="11497000" />
-      <workItem from="1717694438800" duration="5971000" />
+      <workItem from="1717694438800" duration="7149000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -190,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717697101642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add Login_AddToCart_Checkout_LogoutTest; add testng.xml">
+      <created>1717701716991</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717701716991</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +218,7 @@
     <MESSAGE value="add pageobjects" />
     <MESSAGE value="add RegisterTest" />
     <MESSAGE value="add RandomUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="add RandomUtils" />
+    <MESSAGE value="add Login_AddToCart_Checkout_LogoutTest; add testng.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Login_AddToCart_Checkout_LogoutTest; add testng.xml" />
   </component>
 </project>
