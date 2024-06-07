@@ -21,6 +21,8 @@ public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
 
         CheckoutPage checkoutPage = productPage.addToCart();
         Assert.assertEquals(checkoutPage.getTitle(), "Checkout");
+        Assert.assertTrue(checkoutPage.comparePrices());
+        Assert.assertEquals(checkoutPage.getQuantityInputValue(), 1);
     }
 
     private MyAccountPage performLogin(ITestContext context) {

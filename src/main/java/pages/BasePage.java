@@ -10,20 +10,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BasePage {
-    private WebElement find(By by) {
+    WebElement find(By by) {
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicitWait()));
         return wait.until(d -> d.findElement(by));
     }
 
-    protected void click(By by) {
+    void click(By by) {
         find(by).click();
     }
 
-    protected void type(By by, String value) {
+    void type(By by, String value) {
         find(by).sendKeys(value);
     }
 
-    protected void hoverOn(By by) {
+    void hoverOn(By by) {
         Actions actions = new Actions(DriverManager.getDriver());
         actions.moveToElement(find(by)).perform();
     }
