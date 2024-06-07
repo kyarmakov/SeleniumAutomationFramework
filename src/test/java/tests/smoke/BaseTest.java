@@ -1,4 +1,4 @@
-package smoke;
+package tests.smoke;
 
 import driver.Driver;
 import org.testng.annotations.AfterMethod;

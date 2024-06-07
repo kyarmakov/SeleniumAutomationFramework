@@ -1,7 +1,6 @@
 package driver;
 
 import enums.ConfigProperties;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utils.JsonUtils;
 
@@ -16,6 +15,7 @@ public final class Driver {
         if (Objects.isNull(DriverManager.getDriver())) {
             DriverManager.setDriver(new ChromeDriver());
             DriverManager.getDriver().get(JsonUtils.get(ConfigProperties.URL));
+            DriverManager.getDriver().manage().window().maximize();
         }
     }
 

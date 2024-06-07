@@ -1,30 +1,26 @@
-package smoke;
+package tests.smoke;
 
 import constants.FrameworkConstants;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.MyAccountPage;
-import pages.ProductsListPage;
+import pages.*;
 
 public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
-    @Test(priority = 1)
-    void performLoginTest(ITestContext context) {
-        MyAccountPage myAccountPage = performLogin(context);
-
-        Assert.assertEquals(myAccountPage.getTitle(), "My Account");
-    }
-
     @Test(priority = 2)
-    void addToCartTest(ITestContext context) {
+    void performLoginAddToCartCheckoutLogoutTest(ITestContext context) {
         MyAccountPage myAccountPage = performLogin(context);
+        Assert.assertEquals(myAccountPage.getTitle(), "My Account");
 
         ProductsListPage productsListPage = myAccountPage.searchFor(FrameworkConstants.getSmokeSuiteSearchProduct());
         String productPageTitle = "Search - " + FrameworkConstants.getSmokeSuiteSearchProduct();
-
         Assert.assertEquals(productsListPage.getTitle(), productPageTitle);
+
+        ProductPage productPage = productsListPage.clickOnProduct();
+        Assert.assertEquals(productPage.getTitle().toLowerCase(), FrameworkConstants.getSmokeSuiteSearchProduct());
+
+        CheckoutPage checkoutPage = productPage.addToCart();
+        Assert.assertEquals(checkoutPage.getTitle(), "Checkout");
     }
 
     private MyAccountPage performLogin(ITestContext context) {

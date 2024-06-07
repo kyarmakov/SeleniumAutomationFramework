@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add Login_AddToCart_Checkout_LogoutTest; add testng.xml">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add addToCartTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductsListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/smoke/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/smoke/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +39,14 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/testng.xml">
     <configuration name="C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumAutomationFramework" />
@@ -143,7 +147,8 @@
       <option name="presentableId" value="Default" />
       <updated>1716903362158</updated>
       <workItem from="1716903364075" duration="11497000" />
-      <workItem from="1717694438800" duration="7149000" />
+      <workItem from="1717694438800" duration="8700000" />
+      <workItem from="1717749754836" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -194,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717701716991</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add addToCartTest">
+      <created>1717702968138</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717702968138</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +231,7 @@
     <MESSAGE value="add RegisterTest" />
     <MESSAGE value="add RandomUtils" />
     <MESSAGE value="add Login_AddToCart_Checkout_LogoutTest; add testng.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Login_AddToCart_Checkout_LogoutTest; add testng.xml" />
+    <MESSAGE value="add addToCartTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add addToCartTest" />
   </component>
 </project>

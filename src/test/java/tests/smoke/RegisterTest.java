@@ -1,4 +1,4 @@
-package smoke;
+package tests.smoke;
 
 import org.testng.Assert;
 import org.testng.ITestContext;

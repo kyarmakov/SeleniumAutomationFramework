@@ -4,13 +4,13 @@
     <test verbose="2" preserve-order="true"
           name="RegisterTest">
         <classes>
-            <class name="smoke.RegisterTest"/>
+            <class name="tests.smoke.RegisterTest"/>
         </classes>
     </test>
     <test verbose="2" preserve-order="true"
           name="Login_AddToCart_Checkout_LogoutTest">
         <classes>
-            <class name="smoke.Login_AddToCart_Checkout_LogoutTest"/>
+            <class name="tests.smoke.Login_AddToCart_Checkout_LogoutTest"/>
         </classes>
     </test>
 </suite>
