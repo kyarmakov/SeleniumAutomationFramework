@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add ProductPage, CheckoutPage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add checkout test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LogoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +142,7 @@
       <updated>1716903362158</updated>
       <workItem from="1716903364075" duration="11497000" />
       <workItem from="1717694438800" duration="8700000" />
-      <workItem from="1717749754836" duration="6578000" />
+      <workItem from="1717749754836" duration="6913000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717758521123</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add checkout test">
+      <created>1717760882454</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717760882454</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +241,7 @@
     <MESSAGE value="add Login_AddToCart_Checkout_LogoutTest; add testng.xml" />
     <MESSAGE value="add addToCartTest" />
     <MESSAGE value="add ProductPage, CheckoutPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ProductPage, CheckoutPage" />
+    <MESSAGE value="add checkout test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add checkout test" />
   </component>
 </project>

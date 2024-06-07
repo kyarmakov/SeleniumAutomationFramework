@@ -6,6 +6,7 @@ public final class HomePage extends BasePage {
     private final By myAccountDropdown = By.xpath("//*[@id=\"widget-navbar-217834\"]/ul/li[6]/a");
     private final By registerLink = By.xpath("//span[contains(text(), 'Register')]/ancestor::a");
     private final By loginLink = By.xpath("//span[contains(text(), 'Login')]/ancestor::a");
+    private final By logoutLink = By.xpath("//span[contains(text(), 'Logout')]/ancestor::a");
 
     public RegisterPage clickOnRegisterLink() {
         hoverOn(myAccountDropdown);
@@ -17,5 +18,11 @@ public final class HomePage extends BasePage {
         hoverOn(myAccountDropdown);
         click(loginLink);
         return new LoginPage();
+    }
+
+    public LogoutPage clickOnLogoutLink() {
+        hoverOn(myAccountDropdown);
+        click(logoutLink);
+        return new LogoutPage();
     }
 }

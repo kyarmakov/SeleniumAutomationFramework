@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.*;
 
 public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
-    @Test(priority = 2)
+    @Test
     void performLoginAddToCartCheckoutLogoutTest(ITestContext context) {
         MyAccountPage myAccountPage = performLogin(context);
         Assert.assertEquals(myAccountPage.getTitle(), "My Account");
@@ -23,6 +23,9 @@ public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
         Assert.assertEquals(checkoutPage.getTitle(), "Checkout");
         Assert.assertTrue(checkoutPage.comparePrices());
         Assert.assertEquals(checkoutPage.getQuantityInputValue(), 1);
+
+        LogoutPage logoutPage = new HomePage().clickOnLogoutLink();
+        Assert.assertEquals(logoutPage.getTitle(), "Account Logout");
     }
 
     private MyAccountPage performLogin(ITestContext context) {
