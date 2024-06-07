@@ -15,7 +15,7 @@ public final class DriverManager {
         driver.set(driverRef);
     }
 
-    static void unload() {
+    public static void unload() {
         driver.remove();
     }
 }
