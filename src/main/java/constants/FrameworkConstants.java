@@ -8,8 +8,13 @@ public final class FrameworkConstants {
     private static final int EXPLICITWAIT = 10;
     private static final String SMOKESUITESEARCHPRODUCT = "iphone";
     private static final String EXTENTREPORTPATH = System.getProperty("user.dir") + "/reports";
+    private static final String EXCELPATH = System.getProperty("user.dir") + "/src/test/resources/excel/regression.xlsx";
 
     private FrameworkConstants() {}
+
+    public static String getExcelPath() {
+        return EXCELPATH;
+    }
 
     public static String getConfigJsonFilePath() {
         return CONFIGJSONFILEPATH;
