@@ -20,6 +20,10 @@ public final class ExtentReportLogger {
         ExtentReportManager.getExtentTest().skip(message);
     }
 
+    public static void info(String message) {
+        ExtentReportManager.getExtentTest().info(message);
+    }
+
     private static String getBase64Screenshot() {
         return ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
     }

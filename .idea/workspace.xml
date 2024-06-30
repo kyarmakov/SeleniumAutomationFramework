@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add extentreports">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add taking screenshots on fail functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +147,7 @@
       <workItem from="1717766635003" duration="5990000" />
       <workItem from="1717776841407" duration="746000" />
       <workItem from="1718724395167" duration="384000" />
-      <workItem from="1719746401313" duration="684000" />
+      <workItem from="1719746401313" duration="3479000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717771265943</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add taking screenshots on fail functionality">
+      <created>1719747317953</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719747317953</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +270,7 @@
     <MESSAGE value="add checkout test" />
     <MESSAGE value="add logout test" />
     <MESSAGE value="add extentreports" />
-    <option name="LAST_COMMIT_MESSAGE" value="add extentreports" />
+    <MESSAGE value="add taking screenshots on fail functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add taking screenshots on fail functionality" />
   </component>
 </project>

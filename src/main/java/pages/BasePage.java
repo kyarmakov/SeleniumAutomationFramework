@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import reports.ExtentReportLogger;
 
 import java.time.Duration;
 
@@ -16,16 +17,25 @@ public class BasePage {
     }
 
     void click(By by) {
-        find(by).click();
+        WebElement webElement = find(by);
+        String accessibleName = webElement.getAccessibleName();
+        webElement.click();
+        ExtentReportLogger.info(accessibleName + " is clicked");
     }
 
     void type(By by, String value) {
-        find(by).sendKeys(value);
+        WebElement webElement = find(by);
+        String accessibleName = webElement.getAccessibleName();
+        webElement.sendKeys(value);
+        ExtentReportLogger.info(value + " is entered to " + accessibleName);
     }
 
     void hoverOn(By by) {
+        WebElement webElement = find(by);
+        String accessibleName = webElement.getAccessibleName();
         Actions actions = new Actions(DriverManager.getDriver());
-        actions.moveToElement(find(by)).perform();
+        actions.moveToElement(webElement).perform();
+        ExtentReportLogger.info(accessibleName + " is hovered upon");
     }
 
     public String getTitle() {
