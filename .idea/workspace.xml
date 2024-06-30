@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add logout test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/listeners/ReportListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentReportManager.java" afterDir="false" />
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add extentreports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +38,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunManager" selected="TestNG.C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/testng.xml">
@@ -149,7 +144,10 @@
       <workItem from="1716903364075" duration="11497000" />
       <workItem from="1717694438800" duration="8700000" />
       <workItem from="1717749754836" duration="7165000" />
-      <workItem from="1717766635003" duration="4464000" />
+      <workItem from="1717766635003" duration="5990000" />
+      <workItem from="1717776841407" duration="746000" />
+      <workItem from="1718724395167" duration="384000" />
+      <workItem from="1719746401313" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717761348217</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add extentreports">
+      <created>1717771265943</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717771265943</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +262,7 @@
     <MESSAGE value="add ProductPage, CheckoutPage" />
     <MESSAGE value="add checkout test" />
     <MESSAGE value="add logout test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logout test" />
+    <MESSAGE value="add extentreports" />
+    <option name="LAST_COMMIT_MESSAGE" value="add extentreports" />
   </component>
 </project>

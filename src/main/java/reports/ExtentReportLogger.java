@@ -1,5 +1,10 @@
 package reports;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+import driver.DriverManager;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 public final class ExtentReportLogger {
     private ExtentReportLogger() {}
 
@@ -8,10 +13,14 @@ public final class ExtentReportLogger {
     }
 
     public static void fail(String message) {
-        ExtentReportManager.getExtentTest().fail(message);
+        ExtentReportManager.getExtentTest().fail(message, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Screenshot()).build());
     }
 
     public static void skip(String message) {
         ExtentReportManager.getExtentTest().skip(message);
+    }
+
+    private static String getBase64Screenshot() {
+        return ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
     }
 }
