@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <test
+            name="RegisterTest">
+        <classes>
+            <class name="tests.smoke.RegisterTest"/>
+        </classes>
+    </test>
+    <test
+            name="Login_AddToCart_Checkout_LogoutTest">
+        <classes>
+            <class name="tests.smoke.Login_AddToCart_Checkout_LogoutTest"/>
+        </classes>
+    </test>
+</suite>

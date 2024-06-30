@@ -27,7 +27,8 @@ public class ReportListener implements ITestListener, ISuiteListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentReport.createTest(result.getMethod().getMethodName());
+        String suite = result.getTestClass().toString().split("tests\\.")[1].split("\\.")[0];
+        ExtentReport.createTest(suite.toUpperCase() + " - " + result.getMethod().getMethodName());
     }
 
     @Override
