@@ -40,7 +40,6 @@ public class ReportListener implements ITestListener, ISuiteListener {
         ExtentReportLogger.fail(result.getMethod().getMethodName() + " is failed");
         ExtentReportLogger.fail(result.getThrowable().toString());
         ExtentReportLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()).replace(",", "<br/>"));
-        // attach screenshot
     }
 
     @Override

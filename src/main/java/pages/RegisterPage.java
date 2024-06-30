@@ -12,24 +12,33 @@ public class RegisterPage extends BasePage {
     private final By agreeToPrivacyPolicyInput = By.xpath("//label[@for='input-agree']");
     private final By continueButton = By.xpath("//input[@type='submit' and @value='Continue']");
 
-    private final By[] inputs = {
-            firstNameInput,
-            lastNameInput,
-            emailInput,
-            telephoneInput,
-            passwordInput,
-            confirmPasswordInput,
-            agreeToPrivacyPolicyInput,
-            continueButton
-    };
+    public RegisterPage enterConfirmPassword(String value) {
+        type(confirmPasswordInput, value);
+        return this;
+    }
 
-    public RegisterPage enterValues(String[] values) {
-        for (int i = 0; i < inputs.length; i++) {
-            for (int j = i; j < values.length; j++) {
-                type(inputs[i], values[j]);
-                break;
-            }
-        }
+    public RegisterPage enterPassword(String value) {
+        type(passwordInput, value);
+        return this;
+    }
+
+    public RegisterPage enterTelephone(String value) {
+        type(telephoneInput, value);
+        return this;
+    }
+
+    public RegisterPage enterEmail(String value) {
+        type(emailInput, value);
+        return this;
+    }
+
+    public RegisterPage enterLastName(String value) {
+        type(lastNameInput, value);
+        return this;
+    }
+
+    public RegisterPage enterFirstName(String value) {
+        type(firstNameInput, value);
         return this;
     }
 

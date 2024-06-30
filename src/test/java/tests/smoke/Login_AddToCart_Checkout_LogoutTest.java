@@ -29,11 +29,8 @@ public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
     }
 
     private MyAccountPage performLogin(ITestContext context) {
-//        String email = (String) context.getSuite().getAttribute("email");
-//        String password = (String) context.getSuite().getAttribute("password");
-
-        String email = "asdf1123412341234123423@gmail.com";
-        String password = "asdf";
+        String email = (String) context.getSuite().getAttribute("email");
+        String password = (String) context.getSuite().getAttribute("password");
 
         LoginPage loginPage = new HomePage().clickOnLoginLink();
         return loginPage.enterValues(email, password).clickOnLoginButton();
