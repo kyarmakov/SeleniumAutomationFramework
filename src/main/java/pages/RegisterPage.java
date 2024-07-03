@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class RegisterPage extends BasePage {
     private final By firstNameInput = By.xpath("//input[@name='firstname']");
@@ -11,6 +12,12 @@ public class RegisterPage extends BasePage {
     private final By confirmPasswordInput = By.xpath("//input[@name='confirm']");
     private final By agreeToPrivacyPolicyInput = By.xpath("//label[@for='input-agree']");
     private final By continueButton = By.xpath("//input[@type='submit' and @value='Continue']");
+    private final By emailAlreadyRegisteredElement = By.xpath("//div[text()=' Warning: E-Mail Address is already registered!']");
+
+    public String getEmailAlreadyRegisteredErrorMessage() {
+        WebElement webElement = find(emailAlreadyRegisteredElement);
+        return webElement.getText();
+    }
 
     public RegisterPage enterConfirmPassword(String value) {
         type(confirmPasswordInput, value);
@@ -43,7 +50,7 @@ public class RegisterPage extends BasePage {
     }
 
     public RegisterPage clickOnPrivacyPolicy() {
-        click(agreeToPrivacyPolicyInput);
+        click(agreeToPrivacyPolicyInput, "Privacy Policy");
         return this;
     }
 

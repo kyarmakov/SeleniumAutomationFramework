@@ -23,6 +23,11 @@ public class BasePage {
         ExtentReportLogger.info(accessibleName + " is clicked");
     }
 
+    void click(By by, String elementName) {
+        find(by).click();
+        ExtentReportLogger.info(elementName + " is clicked");
+    }
+
     void type(By by, String value) {
         WebElement webElement = find(by);
         String accessibleName = webElement.getAccessibleName();

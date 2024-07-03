@@ -9,6 +9,7 @@ import utils.DataProviderUtils;
 import utils.RandomUtils;
 
 import java.util.Map;
+import java.util.Objects;
 
 public class RegistrationTest extends BaseTest {
 
@@ -17,7 +18,6 @@ public class RegistrationTest extends BaseTest {
         RegisterPage registerPage = new HomePage().clickOnRegisterLink();
         Assert.assertEquals(registerPage.getTitle(), "Register Account");
 
-        String password = RandomUtils.getRandomPassword();
         AccountCreatedPage accountCreatedPage = registerPage
                 .enterFirstName(map.get("firstName"))
                 .enterLastName(map.get("lastName"))
@@ -28,6 +28,10 @@ public class RegistrationTest extends BaseTest {
                 .clickOnPrivacyPolicy()
                 .clickOnContinueButton();
 
-        Assert.assertEquals(accountCreatedPage.getTitle(), "Your Account Has Been Created!");
+        if (Objects.equals(map.get("errorMessage"), ""))
+            Assert.assertEquals(accountCreatedPage.getTitle(), "Your Account Has Been Created!");
+
+        if (Objects.equals(map.get("testName"), "RegisterUser_EmailAlreadyRegistered"))
+            Assert.assertEquals(registerPage.getEmailAlreadyRegisteredErrorMessage(), map.get("errorMessage"));
     }
 }

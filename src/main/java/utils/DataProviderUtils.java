@@ -25,9 +25,14 @@ public final class DataProviderUtils {
             String randomPassword = RandomUtils.getRandomPassword();
             String randomEmail = RandomUtils.getRandomEmail();
 
-            test.put("email", randomEmail);
-            test.put("password", randomPassword);
-            test.put("confirmPassword", randomPassword);
+            if (test.get("email").equalsIgnoreCase("RANDOM_EMAIL"))
+                test.put("email", randomEmail);
+
+            if (test.get("password").equalsIgnoreCase("RANDOM_PASSWORD"))
+                test.put("password", randomPassword);
+
+            if (test.get("confirmPassword").equalsIgnoreCase("RANDOM_PASSWORD"))
+                test.put("confirmPassword", randomPassword);
 
             testsToReturn.add(test);
         }
