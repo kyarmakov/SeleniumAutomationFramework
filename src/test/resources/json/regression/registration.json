@@ -27,13 +27,24 @@
     "email": "RANDOM_EMAIL",
     "telephone": "+31234567890",
     "password": "RANDOM_PASSWORD",
-    "confirmPassword": "RANDOM_PASSWORD"
+    "confirmPassword": "RANDOM_PASSWORD",
+    "uncheckPrivacyPolicy": true
   },
   {
     "testName": "RegisterUser_EmptyFirstName",
     "errorMessage": "First Name must be between 1 and 32 characters!",
     "firstName": "",
     "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_EmptyLastName",
+    "errorMessage": "Last Name must be between 1 and 32 characters!",
+    "firstName": "Jane",
+    "lastName": "",
     "email": "RANDOM_EMAIL",
     "telephone": "+31234567890",
     "password": "RANDOM_PASSWORD",

@@ -25,18 +25,12 @@ public class RegistrationTest extends BaseTest {
                 .enterTelephone(map.get("telephone"))
                 .enterPassword(map.get("password"))
                 .enterConfirmPassword(map.get("confirmPassword"))
-                .clickOnPrivacyPolicy(!map.get("testName").equalsIgnoreCase("RegisterUser_AgreeToPrivacyPolicyUnchecked"))
+                .clickOnPrivacyPolicy(Boolean.parseBoolean(map.get("uncheckPrivacyPolicy")))
                 .clickOnContinueButton();
 
         if (Objects.equals(map.get("errorMessage"), ""))
             Assert.assertEquals(accountCreatedPage.getTitle(), "Your Account Has Been Created!");
         else
             Assert.assertEquals(registerPage.getActualErrorMessage(map.get("errorMessage")), map.get("errorMessage"));
-//
-//        if (Objects.equals(map.get("testName"), "RegisterUser_EmailAlreadyRegistered"))
-//            Assert.assertEquals(registerPage.getEmailAlreadyRegisteredErrorMessage(), map.get("errorMessage"));
-//
-//        if (Objects.equals(map.get("testName"), "RegisterUser_AgreeToPrivacyPolicyUnchecked"))
-//            Assert.assertEquals(registerPage.getAgreeToPrivacyPolicyErrorMessage(), map.get("errorMessage"));
     }
 }

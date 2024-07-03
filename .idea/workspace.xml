@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add dynamic xpath locator for getting elements with error messages">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" afterDir="false" />
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="remove excel as data source, add json instead">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +165,7 @@
       <workItem from="1719997115575" duration="1207000" />
       <workItem from="1719998518594" duration="22000" />
       <workItem from="1720001185329" duration="4337000" />
-      <workItem from="1720005658534" duration="4296000" />
+      <workItem from="1720005658534" duration="5990000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -309,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720006602388</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="remove excel as data source, add json instead">
+      <created>1720010286131</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1720010286131</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +352,8 @@
     <MESSAGE value="add email already exists check; append test name in reports; overload click method with element name for reports;" />
     <MESSAGE value="add agreeToPrivacyPolicyUnchecked check" />
     <MESSAGE value="add dynamic xpath locator for getting elements with error messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dynamic xpath locator for getting elements with error messages" />
+    <MESSAGE value="remove excel as data source, add json instead" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove excel as data source, add json instead" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
