@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add email already exists check; append test name in reports; overload click method with element name for reports;">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add agreeToPrivacyPolicyUnchecked check">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" afterDir="false" />
     </list>
@@ -35,18 +34,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/src/test/resources/excel",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/src/test/resources/excel&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\markr\Desktop\Projects\SeleniumAutomationFramework\src\test\resources\excel" />
@@ -161,7 +160,8 @@
       <workItem from="1719990466915" duration="6569000" />
       <workItem from="1719997115575" duration="1207000" />
       <workItem from="1719998518594" duration="22000" />
-      <workItem from="1720001185329" duration="644000" />
+      <workItem from="1720001185329" duration="4337000" />
+      <workItem from="1720005658534" duration="665000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -289,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719995552652</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add agreeToPrivacyPolicyUnchecked check">
+      <created>1720002012663</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720002012663</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +332,7 @@
     <MESSAGE value="add regression suite" />
     <MESSAGE value="add reading values from xlsx file functionality" />
     <MESSAGE value="add email already exists check; append test name in reports; overload click method with element name for reports;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add email already exists check; append test name in reports; overload click method with element name for reports;" />
+    <MESSAGE value="add agreeToPrivacyPolicyUnchecked check" />
+    <option name="LAST_COMMIT_MESSAGE" value="add agreeToPrivacyPolicyUnchecked check" />
   </component>
 </project>

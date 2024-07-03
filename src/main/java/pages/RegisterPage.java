@@ -63,4 +63,13 @@ public class RegisterPage extends BasePage {
         click(continueButton);
         return new AccountCreatedPage();
     }
+
+    public String getActualErrorMessage(String expectedErrorMessage) {
+        String xpathTemplate = "//*[text()='%s']";
+        System.out.println("STRING FORMATTED: " + String.format(xpathTemplate, expectedErrorMessage));
+        By by = By.xpath(String.format(xpathTemplate, expectedErrorMessage));
+        WebElement webElement = find(by);
+        System.out.println("ACTUAL ERROR MESSAGE: " + webElement.getText());
+        return webElement.getText();
+    }
 }

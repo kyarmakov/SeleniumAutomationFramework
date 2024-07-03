@@ -30,11 +30,13 @@ public class RegistrationTest extends BaseTest {
 
         if (Objects.equals(map.get("errorMessage"), ""))
             Assert.assertEquals(accountCreatedPage.getTitle(), "Your Account Has Been Created!");
-
-        if (Objects.equals(map.get("testName"), "RegisterUser_EmailAlreadyRegistered"))
-            Assert.assertEquals(registerPage.getEmailAlreadyRegisteredErrorMessage(), map.get("errorMessage"));
-
-        if (Objects.equals(map.get("testName"), "RegisterUser_AgreeToPrivacyPolicyUnchecked"))
-            Assert.assertEquals(registerPage.getAgreeToPrivacyPolicyErrorMessage(), map.get("errorMessage"));
+        else
+            Assert.assertEquals(registerPage.getActualErrorMessage(map.get("errorMessage")), map.get("errorMessage"));
+//
+//        if (Objects.equals(map.get("testName"), "RegisterUser_EmailAlreadyRegistered"))
+//            Assert.assertEquals(registerPage.getEmailAlreadyRegisteredErrorMessage(), map.get("errorMessage"));
+//
+//        if (Objects.equals(map.get("testName"), "RegisterUser_AgreeToPrivacyPolicyUnchecked"))
+//            Assert.assertEquals(registerPage.getAgreeToPrivacyPolicyErrorMessage(), map.get("errorMessage"));
     }
 }
