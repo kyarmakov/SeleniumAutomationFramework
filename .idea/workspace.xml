@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add reading values from xlsx file functionality">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add email already exists check; append test name in reports; overload click method with element name for reports;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/ReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/ReportListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +158,10 @@
       <workItem from="1717776841407" duration="746000" />
       <workItem from="1718724395167" duration="384000" />
       <workItem from="1719746401313" duration="20677000" />
-      <workItem from="1719990466915" duration="4665000" />
+      <workItem from="1719990466915" duration="6569000" />
+      <workItem from="1719997115575" duration="1207000" />
+      <workItem from="1719998518594" duration="22000" />
+      <workItem from="1720001185329" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719770723989</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add email already exists check; append test name in reports; overload click method with element name for reports;">
+      <created>1719995552652</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719995552652</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +324,7 @@
     <MESSAGE value="add data provider for registerTest" />
     <MESSAGE value="add regression suite" />
     <MESSAGE value="add reading values from xlsx file functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="add reading values from xlsx file functionality" />
+    <MESSAGE value="add email already exists check; append test name in reports; overload click method with element name for reports;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add email already exists check; append test name in reports; overload click method with element name for reports;" />
   </component>
 </project>

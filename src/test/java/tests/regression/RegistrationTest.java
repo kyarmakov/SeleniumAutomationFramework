@@ -25,7 +25,7 @@ public class RegistrationTest extends BaseTest {
                 .enterTelephone(map.get("telephone"))
                 .enterPassword(map.get("password"))
                 .enterConfirmPassword(map.get("confirmPassword"))
-                .clickOnPrivacyPolicy()
+                .clickOnPrivacyPolicy(!map.get("testName").equalsIgnoreCase("RegisterUser_AgreeToPrivacyPolicyUnchecked"))
                 .clickOnContinueButton();
 
         if (Objects.equals(map.get("errorMessage"), ""))
@@ -33,5 +33,8 @@ public class RegistrationTest extends BaseTest {
 
         if (Objects.equals(map.get("testName"), "RegisterUser_EmailAlreadyRegistered"))
             Assert.assertEquals(registerPage.getEmailAlreadyRegisteredErrorMessage(), map.get("errorMessage"));
+
+        if (Objects.equals(map.get("testName"), "RegisterUser_AgreeToPrivacyPolicyUnchecked"))
+            Assert.assertEquals(registerPage.getAgreeToPrivacyPolicyErrorMessage(), map.get("errorMessage"));
     }
 }

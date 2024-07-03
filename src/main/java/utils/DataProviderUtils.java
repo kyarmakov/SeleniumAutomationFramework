@@ -14,7 +14,7 @@ public final class DataProviderUtils {
     private DataProviderUtils() {}
 
     static {
-        tests = ExcelUtils.getTests("Лист1");
+        tests = ExcelUtils.getTests("Registration");
     }
 
     @DataProvider

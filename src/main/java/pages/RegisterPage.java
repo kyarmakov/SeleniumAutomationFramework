@@ -12,40 +12,45 @@ public class RegisterPage extends BasePage {
     private final By confirmPasswordInput = By.xpath("//input[@name='confirm']");
     private final By agreeToPrivacyPolicyInput = By.xpath("//label[@for='input-agree']");
     private final By continueButton = By.xpath("//input[@type='submit' and @value='Continue']");
-    private final By emailAlreadyRegisteredElement = By.xpath("//div[text()=' Warning: E-Mail Address is already registered!']");
+    private final By emailAlreadyRegisteredErrorElement = By.xpath("//div[text()=' Warning: E-Mail Address is already registered!']");
+    private final By agreeToPrivacyPolicyErrorElement = By.xpath("//div[text()=' Warning: You must agree to the Privacy Policy!']");
 
-    public String getEmailAlreadyRegisteredErrorMessage() {
-        WebElement webElement = find(emailAlreadyRegisteredElement);
+    public String getAgreeToPrivacyPolicyErrorMessage() {
+        WebElement webElement = find(agreeToPrivacyPolicyErrorElement);
         return webElement.getText();
     }
-
+    public String getEmailAlreadyRegisteredErrorMessage() {
+        WebElement webElement = find(emailAlreadyRegisteredErrorElement);
+        return webElement.getText();
+    }
     public RegisterPage enterConfirmPassword(String value) {
         type(confirmPasswordInput, value);
         return this;
     }
-
     public RegisterPage enterPassword(String value) {
         type(passwordInput, value);
         return this;
     }
-
     public RegisterPage enterTelephone(String value) {
         type(telephoneInput, value);
         return this;
     }
-
     public RegisterPage enterEmail(String value) {
         type(emailInput, value);
         return this;
     }
-
     public RegisterPage enterLastName(String value) {
         type(lastNameInput, value);
         return this;
     }
-
     public RegisterPage enterFirstName(String value) {
         type(firstNameInput, value);
+        return this;
+    }
+    public RegisterPage clickOnPrivacyPolicy(boolean toClick) {
+        if (toClick)
+            click(agreeToPrivacyPolicyInput, "Privacy Policy");
+
         return this;
     }
 
