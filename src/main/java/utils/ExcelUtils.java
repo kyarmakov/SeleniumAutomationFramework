@@ -30,7 +30,9 @@ public final class ExcelUtils {
         List<Map<String, String>> list = new ArrayList<>();
         Map<String, String> map;
         int lastRowNum = sheet.getLastRowNum();
+        System.out.println("LAST ROW NUM " + lastRowNum);
         int lastColNum = sheet.getRow(0).getLastCellNum();
+        System.out.println("LAST COL NUM " + lastColNum);
 
         for (int i = 1; i <= lastRowNum; i++) {
             map = new HashMap<>();

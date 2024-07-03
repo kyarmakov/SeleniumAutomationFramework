@@ -9,8 +9,13 @@ public final class FrameworkConstants {
     private static final String SMOKESUITESEARCHPRODUCT = "iphone";
     private static final String EXTENTREPORTPATH = System.getProperty("user.dir") + "/reports";
     private static final String EXCELPATH = System.getProperty("user.dir") + "/src/test/resources/excel/regression.xlsx";
+    private static final String REGISTRATIONJSONFILEPATH = System.getProperty("user.dir") + "/src/test/resources/json/regression/registration.json";
 
     private FrameworkConstants() {}
+
+    public static String getRegistrationJsonFilePath() {
+        return REGISTRATIONJSONFILEPATH;
+    }
 
     public static String getExcelPath() {
         return EXCELPATH;

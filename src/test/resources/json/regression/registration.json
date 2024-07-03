@@ -1,0 +1,42 @@
+[
+  {
+    "testName": "RegisterUser_ValidRequest",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_EmailAlreadyRegistered",
+    "errorMessage": "Warning: E-Mail Address is already registered!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "abcd@gmail.com",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_AgreeToPrivacyPolicyUnchecked",
+    "errorMessage": "Warning: You must agree to the Privacy Policy!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_EmptyFirstName",
+    "errorMessage": "First Name must be between 1 and 32 characters!",
+    "firstName": "",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  }
+]

@@ -1,7 +1,12 @@
 package utils;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import constants.FrameworkConstants;
 import org.testng.annotations.DataProvider;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,7 +19,13 @@ public final class DataProviderUtils {
     private DataProviderUtils() {}
 
     static {
-        tests = ExcelUtils.getTests("Registration");
+//        tests = ExcelUtils.getTests("Registration");
+        try {
+            tests = new ObjectMapper()
+                    .readValue(new File(FrameworkConstants.getRegistrationJsonFilePath()), new TypeReference<>() {});
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @DataProvider

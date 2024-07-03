@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add agreeToPrivacyPolicyUnchecked check">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add dynamic xpath locator for getting elements with error messages">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DataProviderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/excel/regression.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +36,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/src/test/resources/excel&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/src/test/resources/excel",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\markr\Desktop\Projects\SeleniumAutomationFramework\src\test\resources\excel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\markr\Desktop\Projects\SeleniumAutomationFramework\src\test\resources\excel" />
     </key>
   </component>
@@ -161,7 +167,7 @@
       <workItem from="1719997115575" duration="1207000" />
       <workItem from="1719998518594" duration="22000" />
       <workItem from="1720001185329" duration="4337000" />
-      <workItem from="1720005658534" duration="665000" />
+      <workItem from="1720005658534" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -296,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720002012663</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add dynamic xpath locator for getting elements with error messages">
+      <created>1720006602388</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720006602388</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +346,22 @@
     <MESSAGE value="add reading values from xlsx file functionality" />
     <MESSAGE value="add email already exists check; append test name in reports; overload click method with element name for reports;" />
     <MESSAGE value="add agreeToPrivacyPolicyUnchecked check" />
-    <option name="LAST_COMMIT_MESSAGE" value="add agreeToPrivacyPolicyUnchecked check" />
+    <MESSAGE value="add dynamic xpath locator for getting elements with error messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dynamic xpath locator for getting elements with error messages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/JsonUtils.java</url>
+          <line>15</line>
+          <properties class="utils.JsonUtils" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
