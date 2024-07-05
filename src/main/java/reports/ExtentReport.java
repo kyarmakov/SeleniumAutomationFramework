@@ -34,7 +34,7 @@ public final class ExtentReport {
             extent.flush();
 
         ExtentReportManager.unload();
-        Desktop.getDesktop().browse(new File(path).toURI());
+//        Desktop.getDesktop().browse(new File(path).toURI());
     }
 
     public static void createTest(String testcaseName) {
