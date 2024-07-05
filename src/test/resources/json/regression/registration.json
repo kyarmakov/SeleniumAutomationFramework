@@ -81,7 +81,7 @@
     "confirmPassword": "RANDOM_PASSWORD"
   },
   {
-    "testName": "RegisterUser_FirstNameMoreThan32Chars",
+    "testName": "RegisterUser_33CharsFirstName",
     "errorMessage": "First Name must be between 1 and 32 characters!",
     "firstName": "JasonJasonJasonJasonJasonJasonJas",
     "lastName": "Doe",
@@ -141,12 +141,92 @@
     "confirmPassword": "RANDOM_PASSWORD"
   },
   {
-    "testName": "RegisterUser_LastNameMoreThan32Chars",
+    "testName": "RegisterUser_33CharsLastName",
     "errorMessage": "Last Name must be between 1 and 32 characters!",
     "firstName": "Jane",
     "lastName": "JasonJasonJasonJasonJasonJasonJas",
     "email": "RANDOM_EMAIL",
     "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_EmptyEmail",
+    "errorMessage": "E-Mail Address does not appear to be valid!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_EmptyTelephone",
+    "errorMessage": "Telephone must be between 3 and 32 characters!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_2CharsTelephone",
+    "errorMessage": "Telephone must be between 3 and 32 characters!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+3",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_3CharsTelephone",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_4CharsTelephone",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+312",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_31CharsTelephone",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+312345678901234567890123456789",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_32CharsTelephone",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+3123456789012345678901234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_33CharsTelephone",
+    "errorMessage": "Telephone must be between 3 and 32 characters!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890123456789012345678901",
     "password": "RANDOM_PASSWORD",
     "confirmPassword": "RANDOM_PASSWORD"
   }

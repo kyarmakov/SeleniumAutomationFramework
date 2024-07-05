@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add parallel execution of regression suite; change smoke suite test name rendering in reports">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add tests for firstName/lastName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reports/ExtentReportLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/regression-suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/regression-suite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +167,7 @@
       <workItem from="1719998518594" duration="22000" />
       <workItem from="1720001185329" duration="4337000" />
       <workItem from="1720005658534" duration="7446000" />
-      <workItem from="1720181051925" duration="4158000" />
+      <workItem from="1720181051925" duration="5977000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -328,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720182173265</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add tests for firstName/lastName">
+      <created>1720185346341</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1720185346341</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,8 @@
     <MESSAGE value="remove excel as data source, add json instead" />
     <MESSAGE value="refactor check/uncheck Privacy Policy" />
     <MESSAGE value="add parallel execution of regression suite; change smoke suite test name rendering in reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="add parallel execution of regression suite; change smoke suite test name rendering in reports" />
+    <MESSAGE value="add tests for firstName/lastName" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests for firstName/lastName" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

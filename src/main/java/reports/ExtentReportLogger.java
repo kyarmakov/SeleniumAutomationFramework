@@ -9,7 +9,7 @@ public final class ExtentReportLogger {
     private ExtentReportLogger() {}
 
     public static void pass(String message) {
-        ExtentReportManager.getExtentTest().pass(message);
+        ExtentReportManager.getExtentTest().pass(message, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Screenshot()).build());
     }
 
     public static void fail(String message) {
@@ -17,7 +17,7 @@ public final class ExtentReportLogger {
     }
 
     public static void skip(String message) {
-        ExtentReportManager.getExtentTest().skip(message);
+        ExtentReportManager.getExtentTest().skip(message, MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64Screenshot()).build());
     }
 
     public static void info(String message) {
