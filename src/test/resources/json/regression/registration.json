@@ -229,5 +229,95 @@
     "telephone": "+31234567890123456789012345678901",
     "password": "RANDOM_PASSWORD",
     "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_EmptyPassword",
+    "errorMessage": "Password must be between 4 and 20 characters!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "",
+    "confirmPassword": ""
+  },
+  {
+    "testName": "RegisterUser_3CharsPassword",
+    "errorMessage": "Password must be between 4 and 20 characters!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "abc",
+    "confirmPassword": "abc"
+  },
+  {
+    "testName": "RegisterUser_4CharsPassword",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "abc1",
+    "confirmPassword": "abc1"
+  },
+  {
+    "testName": "RegisterUser_5CharsPassword",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "abc12",
+    "confirmPassword": "abc12"
+  },
+  {
+    "testName": "RegisterUser_19CharsPassword",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "abc123abc123abc123a",
+    "confirmPassword": "abc123abc123abc123a"
+  },
+  {
+    "testName": "RegisterUser_20CharsPassword",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "abc123abc123abc123ab",
+    "confirmPassword": "abc123abc123abc123ab"
+  },
+  {
+    "testName": "RegisterUser_21CharsPassword",
+    "errorMessage": "Password must be between 4 and 20 characters!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "abc123abc123abc123abc",
+    "confirmPassword": "abc123abc123abc123abc"
+  },
+  {
+    "testName": "RegisterUser_EmptyConfirmPassword",
+    "errorMessage": "Password confirmation does not match password!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": ""
+  },
+  {
+    "testName": "RegisterUser_PasswordsDoNotMatch",
+    "errorMessage": "Password confirmation does not match password!",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "abcd123"
   }
 ]

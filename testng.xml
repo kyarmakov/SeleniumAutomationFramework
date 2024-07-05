@@ -5,7 +5,7 @@
         <listener class-name="listeners.ReportListener"/>
     </listeners>
     <suite-files>
-<!--        <suite-file path="src/test/java/tests/smoke/smoke-suite.xml"/>-->
+        <suite-file path="src/test/java/tests/smoke/smoke-suite.xml"/>
         <suite-file path="src/test/java/tests/regression/regression-suite.xml"/>
     </suite-files>
 </suite>
