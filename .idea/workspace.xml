@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="remove excel as data source, add json instead">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="refactor check/uncheck Privacy Policy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/ReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/ReportListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/smoke/Login_AddToCart_Checkout_LogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +35,19 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/src/test/resources/excel",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/markr/Desktop/Projects/SeleniumAutomationFramework/src/test/resources/excel&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\markr\Desktop\Projects\SeleniumAutomationFramework\src\test\resources\excel" />
@@ -165,7 +166,8 @@
       <workItem from="1719997115575" duration="1207000" />
       <workItem from="1719998518594" duration="22000" />
       <workItem from="1720001185329" duration="4337000" />
-      <workItem from="1720005658534" duration="5990000" />
+      <workItem from="1720005658534" duration="7446000" />
+      <workItem from="1720181051925" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -314,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720010286131</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="refactor check/uncheck Privacy Policy">
+      <created>1720011801299</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720011801299</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +362,8 @@
     <MESSAGE value="add agreeToPrivacyPolicyUnchecked check" />
     <MESSAGE value="add dynamic xpath locator for getting elements with error messages" />
     <MESSAGE value="remove excel as data source, add json instead" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove excel as data source, add json instead" />
+    <MESSAGE value="refactor check/uncheck Privacy Policy" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor check/uncheck Privacy Policy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

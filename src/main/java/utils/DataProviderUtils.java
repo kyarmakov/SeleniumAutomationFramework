@@ -28,7 +28,7 @@ public final class DataProviderUtils {
         }
     }
 
-    @DataProvider
+    @DataProvider(parallel = true)
     public static Iterator<Map<String, String>> getData(Method method) {
         List<Map<String, String>> testsToReturn = new ArrayList<>();
 

@@ -8,7 +8,7 @@ import pages.*;
 
 public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
     @Test
-    void performLoginAddToCartCheckoutLogoutTest(ITestContext context) {
+    void performLogin_AddToCart_Checkout_LogoutTest(ITestContext context) {
         MyAccountPage myAccountPage = performLogin(context);
         Assert.assertEquals(myAccountPage.getTitle(), "My Account");
 

@@ -38,7 +38,6 @@ public class RegisterPage extends BasePage {
         return this;
     }
     public RegisterPage clickOnPrivacyPolicy(boolean uncheck) {
-        System.out.println("UNCHECKED == " + uncheck);
         if (!uncheck)
             click(agreeToPrivacyPolicyInput, "Privacy Policy");
 
