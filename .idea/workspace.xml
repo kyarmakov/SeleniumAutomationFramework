@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="add tests for email/telephone; add screenshots to pass/skip status">
+    <list default="true" id="7e438f56-795c-4e07-9921-c9d71924aaa1" name="Changes" comment="comment out automatically opening browser for reports line">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/json/regression/registration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/regression/regression-suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/regression/regression-suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +166,7 @@
       <workItem from="1719998518594" duration="22000" />
       <workItem from="1720001185329" duration="4337000" />
       <workItem from="1720005658534" duration="7446000" />
-      <workItem from="1720181051925" duration="7515000" />
+      <workItem from="1720181051925" duration="11765000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1716904424607</created>
@@ -342,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1720187231417</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add tests for password/confirm password">
+      <created>1720188972691</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1720188972691</updated>
+    </task>
+    <task id="LOCAL-00027" summary="comment out automatically opening browser for reports line">
+      <created>1720189130614</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1720189130614</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,8 +375,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add dependencies" />
-    <MESSAGE value="add config.json" />
     <MESSAGE value="add driver" />
     <MESSAGE value="add pageobjects" />
     <MESSAGE value="add RegisterTest" />
@@ -385,7 +398,9 @@
     <MESSAGE value="add parallel execution of regression suite; change smoke suite test name rendering in reports" />
     <MESSAGE value="add tests for firstName/lastName" />
     <MESSAGE value="add tests for email/telephone; add screenshots to pass/skip status" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests for email/telephone; add screenshots to pass/skip status" />
+    <MESSAGE value="add tests for password/confirm password" />
+    <MESSAGE value="comment out automatically opening browser for reports line" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment out automatically opening browser for reports line" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

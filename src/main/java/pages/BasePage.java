@@ -3,6 +3,7 @@ package pages;
 import constants.FrameworkConstants;
 import driver.DriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -38,8 +39,10 @@ public class BasePage {
     void hoverOn(By by) {
         WebElement webElement = find(by);
         String accessibleName = webElement.getAccessibleName();
-        Actions actions = new Actions(DriverManager.getDriver());
-        actions.moveToElement(webElement).perform();
+//        Actions actions = new Actions(DriverManager.getDriver());
+//        actions.moveToElement(webElement).perform();
+        JavascriptExecutor executor = (JavascriptExecutor) DriverManager.getDriver();
+        executor.executeScript("arguments[0].click();", webElement);
         ExtentReportLogger.info(accessibleName + " is hovered upon");
     }
 
