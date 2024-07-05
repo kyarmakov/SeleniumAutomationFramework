@@ -41,10 +41,110 @@
     "confirmPassword": "RANDOM_PASSWORD"
   },
   {
+    "testName": "RegisterUser_SingleCharacterFirstName",
+    "errorMessage": "",
+    "firstName": "J",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_2CharactersFirstName",
+    "errorMessage": "",
+    "firstName": "Ja",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_31CharactersFirstName",
+    "errorMessage": "",
+    "firstName": "JasonJasonJasonJasonJasonJasonJ",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_32CharactersFirstName",
+    "errorMessage": "",
+    "firstName": "JasonJasonJasonJasonJasonJasonJa",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_FirstNameMoreThan32Chars",
+    "errorMessage": "First Name must be between 1 and 32 characters!",
+    "firstName": "JasonJasonJasonJasonJasonJasonJas",
+    "lastName": "Doe",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
     "testName": "RegisterUser_EmptyLastName",
     "errorMessage": "Last Name must be between 1 and 32 characters!",
     "firstName": "Jane",
     "lastName": "",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_SingleCharacterLastName",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "D",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_2CharactersLastName",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "Do",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_31CharactersLastName",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "JasonJasonJasonJasonJasonJasonJ",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_32CharactersLastName",
+    "errorMessage": "",
+    "firstName": "Jane",
+    "lastName": "JasonJasonJasonJasonJasonJasonJa",
+    "email": "RANDOM_EMAIL",
+    "telephone": "+31234567890",
+    "password": "RANDOM_PASSWORD",
+    "confirmPassword": "RANDOM_PASSWORD"
+  },
+  {
+    "testName": "RegisterUser_LastNameMoreThan32Chars",
+    "errorMessage": "Last Name must be between 1 and 32 characters!",
+    "firstName": "Jane",
+    "lastName": "JasonJasonJasonJasonJasonJasonJas",
     "email": "RANDOM_EMAIL",
     "telephone": "+31234567890",
     "password": "RANDOM_PASSWORD",
