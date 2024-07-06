@@ -13,7 +13,7 @@ import java.util.Objects;
 
 public class RegistrationTest extends BaseTest {
 
-    @Test(dataProvider = "getData", dataProviderClass = DataProviderUtils.class)
+    @Test(dataProvider = "getData", dataProviderClass = DataProviderUtils.class, suiteName = "REGRESSION")
     void registrationTest(Map<String, String> map) {
         RegisterPage registerPage = new HomePage().clickOnRegisterLink();
         Assert.assertEquals(registerPage.getTitle(), "Register Account");

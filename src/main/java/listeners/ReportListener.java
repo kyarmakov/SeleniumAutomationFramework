@@ -4,6 +4,7 @@ import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.Test;
 import reports.ExtentReport;
 import reports.ExtentReportLogger;
 
@@ -27,7 +28,8 @@ public class ReportListener implements ITestListener, ISuiteListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        String suite = result.getTestClass().toString().split("tests\\.")[1].split("\\.")[0];
+//        String suite = result.getTestClass().toString().split("tests\\.")[1].split("\\.")[0];
+        String suite = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).suiteName();
         if (suite.equalsIgnoreCase("SMOKE"))
             ExtentReport.createTest(suite.toUpperCase() + " - " + result.getMethod().getMethodName());
         else

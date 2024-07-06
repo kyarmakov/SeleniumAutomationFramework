@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.*;
 
 public class Login_AddToCart_Checkout_LogoutTest extends BaseTest {
-    @Test
+    @Test(suiteName = "SMOKE")
     void performLogin_AddToCart_Checkout_LogoutTest(ITestContext context) {
         MyAccountPage myAccountPage = performLogin(context);
         Assert.assertEquals(myAccountPage.getTitle(), "My Account");
